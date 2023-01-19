@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:padding="20dp"
+    android:background="@drawable/bgregister">
+
+    <ImageView
+        android:id="@+id/quiz"
+        android:layout_width="370dp"
+        android:layout_height="217dp"
+        android:src="@drawable/quiz"
+        app:srcCompat="@drawable/quiz" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/quiz"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="Nazwa użytkownika"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:hint="Adres email"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etLogin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+        android:drawablePadding="10dp"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/etConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+        android:drawablePadding="10dp"
+        android:hint="Powtórz Hasło"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <Button
+        android:id="@+id/bSign"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/etConfirm"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:text="Zarejestruj się"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bSign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Posiadasz już konto? Zaloguj się!"
+        android:textColor="#5513CA"
+        android:textSize="16sp" />
+
+  <!--  <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/tvSignIn"
+        android:visibility="gone" /> -->
+</RelativeLayout>
